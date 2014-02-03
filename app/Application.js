@@ -3,8 +3,7 @@
 var app = angular.module( "assignment", [ ] );
 
 /* The factory creates the various models for the application */
-app.factory('reportingModel', function()
-{
+app.factory('reportingModel', function() {
     return new ReportingModel();
 });
 
@@ -12,11 +11,9 @@ app.factory('reportingModel', function()
 /*
  * This configures the routes and associates each route with a view and a controller
  */
-app.config(function ($routeProvider)
-{
+app.config(function ($routeProvider) {
     $routeProvider
-        .when('/reporting',
-        {
+        .when('/reporting', {
             controller: 'ReportingController',
             templateUrl: 'app/templates/reporting.html'
         })
